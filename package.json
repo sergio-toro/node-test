@@ -1,0 +1,26 @@
+{
+  "name": "sergio-xteam-exam",
+  "version": "1.0.0",
+  "description": "Node.js exam",
+  "main": "index.js",
+  "scripts": {
+    "app": "node index.js",
+    "test": "standard $(find ./lib ./index.js -path '*.js') --verbose | snazzy && mocha $(find ./test -path '*.test.js')"
+  },
+  "author": "Sergio Toro",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.17.0",
+    "mocha": "^3.2.0",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "afterEach"
+    ]
+  }
+}
